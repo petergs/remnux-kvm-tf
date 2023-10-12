@@ -11,11 +11,11 @@ variable "remnux_vcpu_count" {
 
 variable "remnux_memory_mb" {
   type    = number
-  default = 4 * 1024 # 16Gb
+  default = 4 * 1024 # 4Gb
 }
 
 variable "pool_name" {
-  description = "storage pool to store the REMnux disk - https://libvirt.org/uri.html"
+  description = "storage pool to store the REMnux disk - https://libvirt.org/storage.html"
   type        = string
   default     = "default"
 }

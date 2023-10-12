@@ -14,7 +14,7 @@ provider "libvirt" {
 resource "libvirt_volume" "remnuxdisk" {
   name             = "remnux.qcow2"
   base_volume_name = "remnux-base.qcow2"
-  pool             = "default"
+  pool             = var.pool_name
 }
 
 resource "libvirt_domain" "remnux" {
